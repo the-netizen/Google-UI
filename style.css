@@ -1,0 +1,107 @@
+body {
+    /* background-color: #1f1f1f;     */
+    
+    /* margin: 0; */
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    /* font-size: 81.25%; */
+    /* min-height: 100vh; 100% of the viewport height */
+    margin: 0;
+}
+
+.nav-bar{
+    position: absolute;
+    width: 100%;
+}
+.nav-bar ul {
+    list-style: none;    
+    font-size: smaller;
+    gap: 20px;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content:flex-end;
+}
+.nav-bar ul a{
+    color: hsl(0, 0%, 23%);
+    display: inline;
+    text-decoration: none;
+}
+
+.nav-bar a:hover{
+    text-decoration: underline;
+}
+
+.body-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    align-items: center;
+    /* flex-grow: 1; */
+    min-height: 100vh; 
+    width: 100vw;
+}
+
+.logo {
+    width: 300px;
+    padding: 30px;;
+}
+
+/* container for search */
+.search {
+    background-color: #4f3939;    
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* flex-shrink : 0; */
+    /* justify-content: flex-end; */
+    /* position: relative; */
+}
+
+#search-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    padding: 2px;
+    border: 1px solid #ccc;
+    min-width: 600px;   
+    width: 100%;
+}
+
+#textbox {
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 16px;
+    /* padding: 5px; */
+}
+
+#search-icon, #mic-icon, #camera-icon{
+    height: 20px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#search-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
+}
+
+#search-button, #lucky-button {
+    border: none;
+    /* outline: none; */
+    background-color: rgb(247, 247, 247);
+    opacity: 0.8;
+    padding: 10px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    #search-box {
+        min-width: 100%;
+    }
+}
