@@ -6,6 +6,7 @@ body {
     /* font-size: 81.25%; */
     /* min-height: 100vh; 100% of the viewport height */
     margin: 0;
+    overflow: hidden; /* Prevent scrollbars */
 }
 
 .nav-bar{
@@ -65,6 +66,13 @@ body {
     border: 1px solid #ccc;
     min-width: 600px;   
     width: 100%;
+    max-width: 800px;
+    box-shadow: 0px 0px 10px 0px rgba(50, 50, 50, 0.2);     
+}
+
+#search-box:hover {
+    /* box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.3);     */
+    border-color: white;
 }
 
 #textbox {
@@ -92,16 +100,27 @@ body {
 
 #search-button, #lucky-button {
     border: none;
+    border-radius: 4px;
     /* outline: none; */
     background-color: rgb(247, 247, 247);
     opacity: 0.8;
-    padding: 10px;
-    font-size: 15px;
+    padding: 10px 15px;
+    font-size: 13px;
     cursor: pointer;
+}
+
+#search-button:hover, #lucky-button:hover {
+    outline: 1px solid rgb(205, 205, 205);
 }
 
 @media (max-width: 600px) {
     #search-box {
         min-width: 100%;
+    }
+}
+
+@media (max-height: 600px) {
+    body{
+        overflow-y: auto; /* Allow vertical scrolling on small screens */
     }
 }
