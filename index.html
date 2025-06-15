@@ -14,7 +14,7 @@
                 <li> <a href="gmail.com"> Gmail </a> </li>
                 <li> <a href = "imageSearch.html"> Images</a> </li>
                 <li> <a href = "advancedSearch.html"> Advanced Search</a> </li>
-                <li> <img src= "icons/more.png"> </li>  
+                <li> <img src= "icons/more.png" style="cursor: pointer;"> </li>  
             </ul>
         </div>
 
@@ -29,14 +29,17 @@
             <div id= search> 
                 <form action="https://www.google.com/search">
                     <div id="search-box"> 
-                        <img src="icons/search_cr23.svg" id="search-icon" style="opacity: 0.5;">
+                        <!-- search icon -->
+                        <button type="submit" name="btnK" value="Google Search" id="search-icon-button">
+                            <img src="icons/search_cr23.svg" id="search-icon" style="opacity: 0.5;">
+                        </button>
                         <input type="text" name="q" placeholder="Search Google or type a URL" id="textbox">
-                        <img src="icons/mic.svg" id="mic-icon">
+                        <img src="icons/mic.svg" id="mic-icon">                        
                         <img src="icons/camera.svg" id="camera-icon">
                     </div>
                     <div id="search-buttons">
-                        <input type="submit" value="Google Search" id="search-button">
-                        <input type="submit" value="I'm Feeling Lucky" id="lucky-button">
+                        <input type="submit" name="btnK" value="Google Search" id="search-button">
+                        <input type="submit" name="btnI" value="I'm Feeling Lucky" id="lucky-button">
                     </div>
                 </form>
             </div>
